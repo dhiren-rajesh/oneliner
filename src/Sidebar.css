@@ -1,0 +1,17 @@
+.side-comp {
+  padding: 1rem;
+  flex: 0.2;
+  /* border-right: 1px solid lightgray;
+  overflow-y: scroll; */
+}
+
+.side-item {
+  display: flex;
+  padding: 1rem 0;
+  margin-left: 2rem;
+  color: white;
+}
+
+.side-icon {
+  margin-right: 1rem;
+}
