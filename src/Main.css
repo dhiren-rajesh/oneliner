@@ -61,16 +61,19 @@
   margin-left: 1.5rem;
 }
 
-.post-icons {
+.post-footer {
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
 }
 
 .arrow-btn {
   border: none;
   background-color: transparent;
-  padding: 0 2rem;
+  padding: 1rem 2rem 0 2rem;
+}
+
+.like-counter {
+  padding: 0 2.5rem;
 }
 
 .arrow-btn-up:hover {

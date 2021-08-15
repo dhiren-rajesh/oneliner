@@ -31,15 +31,17 @@ export default function Main() {
                     <div className="post-content">
                         {textInp}
                     </div>
-                    <div className="post-icons">
+                    <div className="post-footer">
                         <button className="arrow-btn" onClick={() => setLike(like +1)}>
                             <ArrowUpwardIcon className="arrow-btn-up" style={{ fontSize: "2rem"}}/>
-                            {like}
                         </button>
                         <button className="arrow-btn" onClick={() => setDislike(dislike +1)}>
                             <ArrowDownwardIcon className="arrow-btn-down" style={{ fontSize: "2rem"}}/>
-                            {dislike}
                         </button>
+                    </div>
+                    <div className="post-footer">
+                        <div className="like-counter">{like}</div>
+                        <div className="like-counter">{dislike}</div>
                     </div>
                 </div>
             )
