@@ -37,3 +37,40 @@
 .post-btn:hover {
   background-color: #203e7a;
 }
+
+.main-post {
+  background-color: whitesmoke;
+  margin: 1.5rem 0 1.5rem 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.post-header {
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.post-header > h2 {
+  margin: auto 1rem;
+}
+
+.post-content {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+.post-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.post-icon-up:hover {
+  color: green;
+}
+
+.post-icon-down:hover {
+  color: red;
+}

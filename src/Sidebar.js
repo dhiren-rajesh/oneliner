@@ -26,12 +26,12 @@ export default function Sidebar() {
                 Groups
             </div>
             <div className="side-item">
-                <BusinessIcon className="side-icon"/>
-                Marketplace
+                <BookmarkIcon className="side-icon"/>
+                Saved
             </div>
             <div className="side-item">
-                <TvIcon className="side-icon"/>
-                Watch
+                <FlagIcon className="side-icon"/>
+                Pages
             </div>
             <div className="side-item">
                 <EventIcon className="side-icon"/>
@@ -42,12 +42,12 @@ export default function Sidebar() {
                 Memories
             </div>
             <div className="side-item">
-                <BookmarkIcon className="side-icon"/>
-                Saved
+                <BusinessIcon className="side-icon"/>
+                Marketplace
             </div>
             <div className="side-item">
-                <FlagIcon className="side-icon"/>
-                Pages
+                <TvIcon className="side-icon"/>
+                Watch
             </div>
         </div>
     )
