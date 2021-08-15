@@ -7,6 +7,8 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 export default function Main() {
     const [textInp, setTextInp] = useState(null);
+    const [like, setLike] = useState(0);
+    const [dislike, setDislike] = useState(0);
     const [flag, setFlag] = useState(false);
     const submitValue = () => {
         if(textInp != null){
@@ -30,8 +32,14 @@ export default function Main() {
                         {textInp}
                     </div>
                     <div className="post-icons">
-                        <ArrowUpwardIcon className="post-icon-up" style={{ fontSize: "2rem", paddingRight: "2rem"}}/>
-                        <ArrowDownwardIcon className="post-icon-down" style={{ fontSize: "2rem", paddingLeft: "2rem"}}/>
+                        <button className="arrow-btn" onClick={() => setLike(like +1)}>
+                            <ArrowUpwardIcon className="arrow-btn-up" style={{ fontSize: "2rem"}}/>
+                            {like}
+                        </button>
+                        <button className="arrow-btn" onClick={() => setDislike(dislike +1)}>
+                            <ArrowDownwardIcon className="arrow-btn-down" style={{ fontSize: "2rem"}}/>
+                            {dislike}
+                        </button>
                     </div>
                 </div>
             )

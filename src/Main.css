@@ -67,10 +67,16 @@
   padding-top: 1rem;
 }
 
-.post-icon-up:hover {
+.arrow-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0 2rem;
+}
+
+.arrow-btn-up:hover {
   color: green;
 }
 
-.post-icon-down:hover {
+.arrow-btn-down:hover {
   color: red;
 }
