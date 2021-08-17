@@ -31,7 +31,7 @@ const changeLike = () => {
 }
 
   return (
-    <div style={{ display: "flex" }}>
+    <div className="likes-dislikes">
       <button
         style={{
           color: active === "like" ? "green" : "black",
