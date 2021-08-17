@@ -57,8 +57,7 @@
 
 .post-content {
   font-size: 2rem;
-  margin-top: 1rem;
-  margin-left: 1.5rem;
+  margin: 1rem 0 1rem 1.5rem;
 }
 
 .post-footer {
@@ -73,7 +72,8 @@
 }
 
 .like-counter {
-  padding: 0 2.5rem;
+  padding: 1rem 0 0 0;
+  font-size: 1.5rem;
 }
 
 .arrow-btn-up:hover {

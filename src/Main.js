@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
 import './Main.css'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+// import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+// import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import Likes from './Likes'
 
 
 export default function Main() {
     const [textInp, setTextInp] = useState(null);
-    const [like, setLike] = useState(0);
-    const [dislike, setDislike] = useState(0);
+    // const [like, setLike] = useState(0);
+    // const [dislike, setDislike] = useState(0);
     const [flag, setFlag] = useState(false);
     const submitValue = () => {
         if(textInp != null){
@@ -31,17 +32,19 @@ export default function Main() {
                     <div className="post-content">
                         {textInp}
                     </div>
-                    <div className="post-footer">
+                    <hr/>
+                    {/* <div className="post-footer">
+                        <div className="like-counter">{like}</div>
                         <button className="arrow-btn" onClick={() => setLike(like +1)}>
                             <ArrowUpwardIcon className="arrow-btn-up" style={{ fontSize: "2rem"}}/>
                         </button>
                         <button className="arrow-btn" onClick={() => setDislike(dislike +1)}>
                             <ArrowDownwardIcon className="arrow-btn-down" style={{ fontSize: "2rem"}}/>
                         </button>
-                    </div>
-                    <div className="post-footer">
-                        <div className="like-counter">{like}</div>
                         <div className="like-counter">{dislike}</div>
+                    </div> */}
+                    <div>
+                        <Likes/>
                     </div>
                 </div>
             )
