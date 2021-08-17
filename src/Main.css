@@ -40,8 +40,9 @@
 
 .main-post {
   background-color: whitesmoke;
-  margin: 1.5rem 0 1.5rem 1.5rem;
-  padding: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 1.75rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
 }
 
@@ -57,29 +58,6 @@
 
 .post-content {
   font-size: 2rem;
-  margin: 1rem 0 1rem 1.5rem;
-}
-
-.post-footer {
-  display: flex;
-  justify-content: center;
-}
-
-.arrow-btn {
-  border: none;
-  background-color: transparent;
-  padding: 1rem 2rem 0 2rem;
-}
-
-.like-counter {
-  padding: 1rem 0 0 0;
-  font-size: 1.5rem;
-}
-
-.arrow-btn-up:hover {
-  color: green;
-}
-
-.arrow-btn-down:hover {
-  color: red;
+  padding: 2rem 0 2rem 2rem;
+  border-bottom: 1px solid black;
 }

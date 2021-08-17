@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import './Likes.css'
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 
 export default function Likes() {
 
@@ -48,7 +48,7 @@ const changeDislike = () => {
         }
         }
       >
-        <ArrowUpwardIcon  style={{fontSize: "2rem"}}/>
+        <ThumbUpIcon  style={{fontSize: "2rem"}}/>
       </button>
       <div className="like-count">{likes}</div>
       </div>
@@ -62,7 +62,7 @@ const changeDislike = () => {
         }
         }
       >
-        <ArrowDownwardIcon style={{fontSize: "2rem"}}/>
+        <ThumbDownIcon style={{fontSize: "2rem"}}/>
       </button>
       <div className="dislike-count">{dislikes}</div>
       </div>
