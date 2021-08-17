@@ -48,7 +48,7 @@ const changeDislike = () => {
         }
         }
       >
-        <ArrowUpwardIcon/>
+        <ArrowUpwardIcon  style={{fontSize: "2rem"}}/>
       </button>
       <div className="like-count">{likes}</div>
       </div>
@@ -62,7 +62,7 @@ const changeDislike = () => {
         }
         }
       >
-        <ArrowDownwardIcon/>
+        <ArrowDownwardIcon style={{fontSize: "2rem"}}/>
       </button>
       <div className="dislike-count">{dislikes}</div>
       </div>
