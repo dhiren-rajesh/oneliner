@@ -1,4 +1,7 @@
 import {React, useState} from 'react'
+import './Likes.css'
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 export default function Likes() {
 
@@ -6,7 +9,7 @@ const [likes, setLikes] = useState(0);
 const [dislikes, setDislikes] = useState(0);
 const [active, setActive] = useState(null);
 
-const changeDislike = () => {
+const changeLike = () => {
   if(active === "dislike"){
     setDislikes(dislikes - 1)
     setLikes(likes + 1)
@@ -18,7 +21,7 @@ const changeDislike = () => {
   }
 }
 
-const changeLike = () => {
+const changeDislike = () => {
   if(active === "like"){
     setLikes(likes - 1)
     setDislikes(dislikes + 1)
@@ -31,34 +34,39 @@ const changeLike = () => {
 }
 
   return (
+    <div>
     <div className="likes-dislikes">
+      <div>
       <button
+        className="like-btn"
         style={{
           color: active === "like" ? "green" : "black",
-          marginRight: "10px"
         }}
         onClick={() => {
           if(active !== "like")
-            changeDislike()
-        }
-        }
-      >
-        <label>Likes</label>
-        &nbsp;|&nbsp;
-        {likes}
-      </button>
-      <button
-        style={{ color: active === "dislike" ? "red" : "black" }}
-        onClick={() =>{
-          if(active !== "dislike")
             changeLike()
         }
         }
       >
-        <label>Dislikes</label>
-        &nbsp;|&nbsp;
-        {dislikes}
+        <ArrowUpwardIcon/>
       </button>
+      <div className="like-count">{likes}</div>
+      </div>
+      <div>
+      <button
+        className="dislike-btn"
+        style={{ color: active === "dislike" ? "red" : "black" }}
+        onClick={() =>{
+          if(active !== "dislike")
+            changeDislike()
+        }
+        }
+      >
+        <ArrowDownwardIcon/>
+      </button>
+      <div className="dislike-count">{dislikes}</div>
+      </div>
+    </div>
     </div>
   );
 }
