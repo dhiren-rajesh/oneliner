@@ -1,24 +1,23 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import './Main.css'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Likes from './Likes'
+import InputField from './Input'
 
 
 export default function Main() {
-    const [textInp, setTextInp] = useState(null);
-    const [flag, setFlag] = useState(false);
-    const submitValue = () => {
-        if(textInp != null){
-            console.log(textInp);
-            setFlag(true);
-        }
-        else{
-            console.log("Text Field is Empty");
-        }
-    }
+
+    const inpText = useRef(null);
+    const [textInp, setTextInp] = useState();
+
+    const handleClickEvent = () => {
+      const post = inpText.current;
+      setTextInp(post['post'].value);
+      //console.log(textInp);
+    };
 
     const postText = () => {
-        if(flag){
+        if(textInp != null){
             return(
                 <div className="main-post">
                     <div className="post-header">
@@ -40,10 +39,10 @@ export default function Main() {
         <div className="main">
             <div className="post">
                 <AccountCircleIcon style={{ fontSize: "3rem"}}/>
-                <input type="text" className="text-inp" 
-                onChange={e => setTextInp(e.target.value)} 
-                placeholder="What's on your mind??"/>
-                <button type="submit" className="post-btn" onClick={submitValue}>POST</button>
+                <form autoComplete="off" ref={inpText}>
+                    <InputField post={'post'} />
+                </form>
+                <button className="post-btn" onClick={handleClickEvent}>POST</button>
             </div>
             <div>
                 {postText()}
