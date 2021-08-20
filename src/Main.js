@@ -40,7 +40,7 @@ export default function Main() {
             <div className="post">
                 <AccountCircleIcon style={{ fontSize: "3rem"}}/>
                 <form autoComplete="off" ref={inpText}>
-                    <InputField post={'post'} />
+                    <InputField post={"post"} />
                 </form>
                 <button className="post-btn" onClick={handleClickEvent}>POST</button>
             </div>
