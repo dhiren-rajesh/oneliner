@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './Input.css'
 
 export default function InputField({post}) {
-  const [state, setState] = useState('')
+  const [state, setState] = useState(null)
   return (
     <div>
       <input type="text" 
