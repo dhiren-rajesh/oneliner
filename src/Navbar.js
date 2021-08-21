@@ -13,6 +13,7 @@ import GroupWorkIcon from '@material-ui/icons/GroupWork';
 import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 
 export default function Navbar() {
+    var styles = {color:'lightgrey', fontSize : '2rem'}
     return (
         <div className="nav">
             <div>
@@ -22,17 +23,17 @@ export default function Navbar() {
                 <SearchIcon style={{color:'lightgrey', fontSize : '2rem', paddingLeft: '1rem', paddingBottom: '0.5rem'}}/>
             </div>
             <div className="nav-comp">
-                <HomeIcon className="nav-citem" style={{color:'lightgrey', fontSize : '2rem'}}/>
-                <TvIcon className="nav-citem" style={{color:'lightgrey', fontSize : '2rem'}}/>
-                <BusinessIcon className="nav-citem" style={{color:'lightgrey', fontSize : '2rem'}}/>
-                <GroupWorkIcon className="nav-citem" style={{color:'lightgrey', fontSize : '2rem'}}/>
-                <VideogameAssetIcon className="nav-citem" style={{color:'lightgrey', fontSize : '2rem'}}/>
+                <HomeIcon className="nav-citem" style={styles}/>
+                <TvIcon className="nav-citem" style={styles}/>
+                <BusinessIcon className="nav-citem" style={styles}/>
+                <GroupWorkIcon className="nav-citem" style={styles}/>
+                <VideogameAssetIcon className="nav-citem" style={styles}/>
             </div>
             <div className="nav-comp">
-                <AppsIcon className="nav-item" style={{color:'lightgrey', fontSize : '2rem'}}/>
-                <ChatIcon className="nav-item" style={{color:'lightgrey', fontSize : '2rem'}}/>
-                <NotificationsActiveIcon className="nav-item" style={{color:'lightgrey', fontSize : '2rem'}}/>
-                <ArrowDropDownIcon className="nav-item" style={{color:'lightgrey', fontSize : '2.5rem'}}/>
+                <AppsIcon className="nav-item" style={styles}/>
+                <ChatIcon className="nav-item" style={styles}/>
+                <NotificationsActiveIcon className="nav-item" style={styles}/>
+                <ArrowDropDownIcon className="nav-item" style={styles}/>
             </div>
         </div>
     )

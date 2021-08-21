@@ -10,6 +10,13 @@
   color: white;
 }
 
+.side-item:hover {
+  background-color: grey;
+  color: black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
 .side-icon {
   margin-right: 1rem;
 }
