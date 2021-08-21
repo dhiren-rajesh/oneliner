@@ -1,0 +1,22 @@
+.navbarOption {
+  margin-left: 5rem;
+  font-weight: 600;
+  padding-top: 0.75rem;
+  font-size: 2rem;
+}
+
+.navbarOption:hover {
+  color: #fdefef;
+  transition: color 100ms ease-out;
+}
+
+.navbarOption--active:hover {
+  color: #fdefef;
+  border-bottom: 3px solid #fdefef;
+  transition: color 100ms ease-out;
+}
+
+.navbarOption--active {
+  color: #dad0c2;
+  border-bottom: 3px solid #dad0c2;
+}

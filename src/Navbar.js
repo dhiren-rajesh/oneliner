@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import NavbarOption from './NavbarOption';
 import logo from './OL.png'
 import SearchIcon from '@material-ui/icons/Search';
 import AppsIcon from '@material-ui/icons/Apps';
@@ -23,11 +24,11 @@ export default function Navbar() {
                 <SearchIcon style={{color:'lightgrey', fontSize : '2rem', paddingLeft: '1rem', paddingBottom: '0.5rem'}}/>
             </div>
             <div className="nav-comp">
-                <HomeIcon className="nav-citem" style={styles}/>
-                <TvIcon className="nav-citem" style={styles}/>
-                <BusinessIcon className="nav-citem" style={styles}/>
-                <GroupWorkIcon className="nav-citem" style={styles}/>
-                <VideogameAssetIcon className="nav-citem" style={styles}/>
+                <NavbarOption active Icon={HomeIcon}/>
+                <NavbarOption Icon={TvIcon}/>
+                <NavbarOption Icon={BusinessIcon}/>
+                <NavbarOption Icon={GroupWorkIcon}/>
+                <NavbarOption Icon={VideogameAssetIcon}/>
             </div>
             <div className="nav-comp">
                 <AppsIcon className="nav-item" style={styles}/>
